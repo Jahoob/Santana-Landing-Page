@@ -1,8 +1,17 @@
 header {
+    top: 0;
     height: 140px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: $default-background-color;
+}
+
+#header {
+    position: sticky;
+    transition: 0.2s;
+    text-align: center;
 }
 
 .logo {
@@ -17,6 +26,7 @@ header {
     }
 
 ul {
+    margin-top: revert;
     display: inline-flex;
     text-decoration: none;
     width: 642px;
@@ -36,6 +46,7 @@ li a {
 
 li a:hover {
     color: $hover-font-color;
+    text-decoration: none;
 }
 
 .language {
