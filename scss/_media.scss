@@ -56,3 +56,21 @@
     }
 }
 
+@media only screen and (min-width: 768px) {
+    #menuToggle span  {
+        display: none;
+    }
+
+    #menuToggle {
+        display: inline-flex;
+
+    }
+
+    // .links {
+    //     display: inline-block;
+    // }
+
+    #menuToggle #menu:not(:first-child) {
+        display: inline-block;
+    }
+}
