@@ -5,6 +5,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background: $default-background-color;
+    z-index: 999;
 }
 
 #header {

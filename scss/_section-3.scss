@@ -2,6 +2,7 @@
     height: 500px;
     background-color: $default-background-color;
     margin-top: 92px;
+    margin-bottom: 89px;
 }
 
 .section-3 .icons {
@@ -40,14 +41,12 @@
 .section-3 .icons .icon:nth-child(5n)
 .section-3 .icons .icon:nth-child(5n+1) {
     margin-right: 0;
-    background: purple;
-    color: purple;
 }
 
 .icons img:nth-child(2) {
     filter: invert(45%) sepia(46%) saturate(653%) hue-rotate(202deg) brightness(88%) contrast(99%);
 }
 
-// .section-3 .icons .icon img:nth-of-type(odd) {
-//     filter: invert(45%) sepia(46%) saturate(653%) hue-rotate(202deg) brightness(88%) contrast(99%);
-// }
+.section-3 .icons .icon img:nth-of-type(odd) {
+    filter: invert(45%) sepia(46%) saturate(653%) hue-rotate(202deg) brightness(88%) contrast(99%);
+}
