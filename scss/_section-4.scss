@@ -1,11 +1,225 @@
 .section-4 {
-    display: flex;
-    justify-content: center;
-    height: 863px;
-    background: $secondary-background-color;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 863px;
+  background: $secondary-background-color;
 }
 
-// .section-4 input {
+.section-4-upper {
+  font-size: 94px;
+  color: $secondary-font-color;
+  padding-top: 64px;
+  margin-bottom: 68px;
+
+}
+
+.section-4-upper hr {
+  width: 68px;
+  border-width: 5px;
+  background: $default-background-color;
+  border-radius: 10px;
+}
+
+.section-4-form {
+  margin: 0 auto;
+  max-width: 1241px;
+}
+
+.section-4-form .radio {
+  display: block;
+  color: $secondary-font-color;
+  position: relative;
+  top: -160px;
+  left: 0;
+  text-align: left;
+}
+
+.section-4-form .radio p:first-of-type {
+  font-size: 24px;
+}
+
+.section-4-form .radio p:not(:first-of-type) {
+  display: flex;
+  align-items: center;
+}
+
+.section-4-form .radio label {
+  padding-left: 26px;
+}
+
+.section-4-form .radio input {
+  width: 20px;
+  height: 20px;
+}
+
+.section-4-form .radio input:checked {
+  background: #000;
+}
+
+.floating-label-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.floating-label-wrap input:nth-of-type(4) {
+  height: 246px;
+}
+
+.floating-label-wrap input:nth-of-type(3) {
+  position: relative;
+}
+
+.floating-label-field {
+  border-width: 0;
+  color: rgba(#2c3e50, .75);
+  &:focus {
+    outline: 0;
+    box-shadow: 0;
+  }
+
+  &::placeholder {
+    color: transparent;
+  }
+}
+
+.floating-label-field {
+  &,
+  & + .floating-label {
+    line-height: 1;
+    font: inherit;
+    padding: 1.5em;
+    height: 4em;
+  }
+}
+
+.floating-label-field {
+  & + .floating-label {
+    position: absolute;
+    top: 0;
+    left: -500px;
+    user-select: none;
+  }
+}
+
+.floating-label-field {
+  &,
+  & + .floating-label {
+    position: relative;
+  }
+}
+
+.floating-label-field {
+  border-bottom: 3px solid $default-border-color;
+  background-color: $default-background-color;
+  color: $default-font-color, .75;
+  height: 60px;
+  width: 500px;
+  border-radius: 10px;
+  margin-bottom: 37px;
+}
+
+.floating-label-field {
+  & + .floating-label {
+    transition: transform .25s, opacity .25s ease-in-out;
+    transform-origin: 0 0;
+    opacity: .5;
+  }
+  }
+
+  .floating-label-field {
+  &:focus,
+  &:not(:placeholder-shown) {
+    border-color: rgba(white, .1);
+    & + .floating-label {
+      transform: translate(1%, -50%) scale(.7);
+      color: white;
+    }
+  }
+}
+
+.floating-label-input {
+  &:valid {
+    &:not(:placeholder-shown) {
+      border-color: rgba(#2ed573, .3);
+    }
+  }
+
+  &:invalid {
+    border-color: rgba(#ff4757, .3);
+  }
+}
+
+.section-4-lower {
+  color: $secondary-font-color;
+}
+
+.section-4-lower .section-4-lower-checkbox input {
+  height: 20px;
+  width: 20px;
+}
+
+.section-4-lower .section-4-lower-checkbox label {
+  margin-left: 23px;
+}
+
+input[type=checkbox] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input {
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 11px 23px;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: 0;
+  outline: 0;
+  background-color: transparent;
+}
+
+.section-4-lower .section-4-lower-checkbox .checkbox-button {
+  opacity: 0;
+  position: absolute;
+}
+
+.section-4-lower .section-4-lower-checkbox .checkbox-button-control {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+    vertical-align: middle;
+    background-color: $default-background-color;
+    color: #017b5f;
+    border: none;
+}
+
+.checkbox-button:checked+.checkbox-button-control:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: $default-font-color;
+}
+
+.checkbox-button:checked+.checkbox-button-control {
+  border-color: yellow;
+}
+
+
+  // .floating-label-field {
+  //   position: relative;
+  // }
+
+
+
+
+  // .section-4 input {
 //     flex-direction: row;
 // }
 
@@ -94,85 +308,3 @@
 //       opacity: .5;
 //     }
 //    }
-
-
-
-
-
-
-
-   .floating-label-field {
-    border-width: 0;
-    color: rgba(#2c3e50, .75);
-    &:focus {
-      outline: 0;
-      box-shadow: 0;
-    }
-
-    &::placeholder {
-      color: transparent;
-    }
-  }
-
-  .floating-label-field {
-    &,
-    & + .floating-label {
-      line-height: 1;
-      font: inherit;
-      padding: 1.5em;
-      height: 4em;
-    }
-  }
-
-  .floating-label-field {
-    & + .floating-label {
-      position: absolute;
-      top: 0;
-      left: 0;
-      user-select: none;
-    }
-  }
-
-  .floating-label-field {
-    &,
-    & + .floating-label {
-      position: relative;
-    }
-  }
-
-  .floating-label-field {
-    border-bottom: 3px solid rgba(white, .05);
-    background-color: transparent;
-    color: rgba(white, .75);
-  }
-
-  .floating-label-field {
-    & + .floating-label {
-      transition: transform .25s, opacity .25s ease-in-out;
-      transform-origin: 0 0;
-      opacity: .5;
-    }
-   }
-
-   .floating-label-field {
-    &:focus,
-    &:not(:placeholder-shown) {
-      border-color: rgba(white, .1);
-      & + .floating-label {
-        transform: translate(1%, -30%) scale(.8);
-        opacity: .25;
-      }
-    }
-  }
-
-  .floating-label-input {
-    &:valid {
-      &:not(:placeholder-shown) {
-        border-color: rgba(#2ed573, .3);
-      }
-    }
-
-    &:invalid {
-      border-color: rgba(#ff4757, .3);
-    }
-  }
