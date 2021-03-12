@@ -1,0 +1,35 @@
+.footer {
+    // display: flex;
+    // justify-content: space-around;
+    background: $footer-background-color;
+    min-height: 400px;
+    padding-top: 77px;
+}
+
+.footer .footer-items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer .footer-items .footer-logo {
+    height: 70px;
+    width: 196px;
+}
+
+.footer .footer-items .footer-icons-row img {
+    height: 48px;
+    width: 48px;
+    margin-right: 38px;
+}
+
+.footer .footer-items .footer-icons-row img:last-of-type {
+    height: 36px;
+    width: 58px;
+    margin-right: auto;
+}
+
+.footer .footer-items .footer-icons-column .footer-icons-column-text {
+    font-size: 16px;
+    font-weight: bold;
+}

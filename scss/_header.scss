@@ -1,11 +1,13 @@
 header {
     height: 140px;
     width: 100%;
+    max-width: 1923px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: $default-background-color;
     z-index: 999;
+    margin: 0 auto;
 }
 
 #header {
@@ -19,7 +21,7 @@ header {
     height: 70px;
     width: 196px;
     margin-left:339px;
-    margin-right: 147px;
+    // margin-right: 147px;
 }
 
 .links {
@@ -30,7 +32,7 @@ ul {
     margin-top: revert;
     display: inline-flex;
     text-decoration: none;
-    width: 642px;
+    max-width: 642px;
     }
 
 li {

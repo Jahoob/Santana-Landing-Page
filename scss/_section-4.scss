@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  height: 863px;
   background: $secondary-background-color;
+  margin-bottom: 77px;
 }
 
 .section-4-upper {
@@ -155,156 +155,70 @@
   color: $secondary-font-color;
 }
 
-.section-4-lower .section-4-lower-checkbox input {
-  height: 20px;
-  width: 20px;
-}
 
 .section-4-lower .section-4-lower-checkbox label {
   margin-left: 23px;
+  position: relative;
 }
 
-input[type=checkbox] {
-  box-sizing: border-box;
-  padding: 0;
+.section-4-lower-checkbox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-input {
-  font-size: 1rem;
-  line-height: 1.5;
-  padding: 11px 23px;
-  border: 1px solid rgba(0,0,0,.15);
-  border-radius: 0;
-  outline: 0;
-  background-color: transparent;
-}
-
-.section-4-lower .section-4-lower-checkbox .checkbox-button {
-  opacity: 0;
+.section-4-lower .section-4-lower-checkbox input {
   position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
 }
 
 .section-4-lower .section-4-lower-checkbox .checkbox-button-control {
-    position: relative;
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin-right: 12px;
-    vertical-align: middle;
-    background-color: $default-background-color;
-    color: #017b5f;
-    border: none;
-}
-
-.checkbox-button:checked+.checkbox-button-control:after {
-  content: "";
-  display: block;
   position: absolute;
-  top: 5px;
-  left: 5px;
-  width: 10px;
-  height: 10px;
-  background-color: $default-font-color;
+  top: 0;
+  left: -30px;
+  height: 20px;
+  width: 20px;
+  background-color: $default-background-color;
 }
 
 .checkbox-button:checked+.checkbox-button-control {
-  border-color: yellow;
+  border-color: rgb(153, 34, 137);
+}
+
+.section-4-lower .section-4-lower-checkbox .checkbox-button-control:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.section-4-lower .section-4-lower-checkbox input:checked ~ .checkbox-button-control:after {
+  display: block;
+  color: #000;
+}
+
+.section-4-lower .section-4-lower-checkbox .checkbox-button-control:after {
+  left: 7px;
+  top: 4px;
+  width: 5px;
+  height: 10px;
+  border: solid $default-font-color;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 
-  // .floating-label-field {
-  //   position: relative;
-  // }
-
-
-
-
-  // .section-4 input {
-//     flex-direction: row;
-// }
-
-// .floating-label-field {
-//     border-width: 0;
-//     border-radius: 1rem;
-//     color: rgba(#2c3e50, 0.75);
-//     border-bottom: 3px solid rgba(white, .05);
-//     background-color: transparent;
-//     color: rgba(white, 0.75);
-//     &:focus {
-//       outline: 0;
-//       box-shadow: 0;
-//     }
-
-//     &::placeholder {
-//       color: transparent;
-//     }
-//   }
-
-
-//   .floating-label-field {
-//       & + .floating-label {
-//           bottom: 0;
-//           left: -250px;
-//           user-select: none;
-//           transition: transform 0.25s, opacity .25s ease-in-out;
-//           transform-origin: 0 0;
-//           opacity: 0.5;
-//         }
-//     }
-
-//     .floating-label-field {
-//       &,
-//       & + .floating-label {
-//         line-height: 1;
-//         font: inherit;
-//         padding: 1.5em;
-//         height: 60px;
-//         width: 500px;
-//         // position: relative;
-//       }
-//     }
-
-//    .floating-label-field {
-//     &:focus,
-//     &:not(:placeholder-shown) {
-//       border-color: rgba(white, .1);
-//       & + .floating-label {
-//         transform: translate(1%, -30%) scale(.8);
-//         opacity: .25;
-//       }
-//     }
-//   }
-
-//   .floating-label-input {
-//     &:valid {
-//       &:not(:placeholder-shown) {
-//         border-color: rgba(#2ed573, .3);
-//       }
-//     }
-
-//     &:invalid {
-//       border-color: rgba(#ff4757, .3);
-//     }
-//   }
-
-
-//   .floating-label-field {
-//     &,
-//     & + .floating-label {
-//       position: relative;
-//     }
-//   }
-
-//   .floating-label-field {
-//     border-bottom: 3px solid rgba(white, .05);
-//     background-color: $default-background-color;
-//     color: rgba($default-font-color, .75);
-//   }
-
-//   .floating-label-field {
-//     & + .floating-label {
-//       transition: transform .25s, opacity .25s ease-in-out;
-//       transform-origin: 0 0;
-//       opacity: .5;
-//     }
-//    }
+.section-4-lower .section-4-lower-checkbox .checkbox-button-label {
+  padding-left: 23px;
+}

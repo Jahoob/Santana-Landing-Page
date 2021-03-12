@@ -10,8 +10,10 @@
 }
 
 .section-2 .photo img {
+    display: block;
     background-size: contain;
     width: 100%;
+    height: auto;
 }
 
 .section-2 .photo {

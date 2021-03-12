@@ -1,6 +1,24 @@
+@media only screen and (max-width: 1200px) {
+    header .logo {
+        margin-left: 32px;
+    }
+}
+
 @media only screen and (max-width: 992px) {
     .links {
         display: none;
+    }
+
+    header {
+        justify-content: space-around;
+    }
+
+    header .logo {
+        margin-left: 32px;
+    }
+
+    header .language {
+        margin-right: unset;
     }
 
     .section-2 .photo:nth-of-type(1) {
@@ -47,6 +65,12 @@
 @media only screen and (max-width: 768px) {
     .links {
         display: none;
+    }
+
+    header .logo {
+        height: 54px;
+        width: 150px;
+        margin-left: 32px;
     }
 
     .section-2 {
