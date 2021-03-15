@@ -113,8 +113,9 @@
 .floating-label-field {
   border-bottom: 3px solid $default-border-color;
   background-color: $default-background-color;
-  color: $default-font-color, .75;
+  color: $default-font-color, 0.75;
   height: 60px;
+  min-width: 40%;
   width: 500px;
   border-radius: 10px;
   margin-bottom: 37px;
